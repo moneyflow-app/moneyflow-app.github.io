@@ -52,3 +52,13 @@ body {
     color: #186218;
 }
 
+
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 30px;  /* Telefonlarda h1 font boyutunu küçült */
+    }
+
+    .btn {
+        font-size: 16px;  /* Buton font boyutunu küçült */
+    }
+}
