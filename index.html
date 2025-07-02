@@ -23,6 +23,7 @@
         <a href="privacy-policy.html" class="btn">Privacy Policy</a>
         <a href="terms-of-use.html" class="btn">Terms of Use</a>
     </div>
+    <div class="gap"></div> <!-- geçici boşluk -->
 
     <footer class="footer">
         <div class="footer-content">
@@ -30,5 +31,16 @@
             <span class="footer-subtext">2024, İzmir</span>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('.footer');
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const triggerPoint = document.body.offsetHeight - 100;
+    
+            if (scrollPosition >= triggerPoint) {
+                footer.classList.add('show');
+            }
+        });
+    </script>
 </body>
 </html>
