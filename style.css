@@ -7,39 +7,46 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .image-container {
     width: 100%;
-    height: 50vh; /* Ekranın yarısı kadar yükseklik */
+    height: 50vh;
     overflow: hidden;
 }
 
 .logo {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Resmin taşmasını önler ve kırpma yapar */
+    object-fit: cover;
 }
-.title h1{
-    color: #fbfdff;
-    font-weight: 50;
-    padding-top: 20px;
-    font-size: 50px;
-    color: #d9fbd7;
-    font-family:sans-serif;
 
+.page-title {
+    font-family: "Roboto", sans-serif;
+    color: #d9fbd7;
+    margin-top: 10px;
 }
+
+.page-title h1 {
+    font-size: 75px;
+    margin-bottom: 10px; /* boşluk azaltıldı */
+}
+
+.page-title h2 {
+    font-size: 25px;
+    margin-top: 0; /* boşluk azaltıldı */
+}
+
 .button-group {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin: 10px;
 }
 
 .btn {
-    text-decoration:dotted;
+    text-decoration: none;
     padding: 10px 20px;
     background-color: #000000;
     color: white;
@@ -52,13 +59,47 @@ body {
     color: #186218;
 }
 
+.footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.footer-btn {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-subtext {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-btn:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) {
-    .title h1 {
-        font-size: 30px;  /* Telefonlarda h1 font boyutunu küçült */
+    .page-title h1 {
+        font-size: 30px;
     }
 
     .btn {
-        font-size: 16px;  /* Buton font boyutunu küçült */
+        font-size: 16px;
     }
 }
